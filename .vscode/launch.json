@@ -1,0 +1,40 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🌍 spec - chrome",
+      "env": {
+        "CHROME_HEADLESS": "false",
+      },
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "wdio.CHROME.conf.js",
+        "--spec",
+        "${file}",
+      ],
+      "cwd": "${workspaceFolder}",
+      "autoAttachChildProcesses": true,
+      "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "all - chrome",
+      "env": {
+        "CHROME_HEADLESS": "true",
+      },
+      "type": "node",
+      "request": "launch",
+      "args": [
+        "wdio.CHROME.conf.js",
+      ],
+      "cwd": "${workspaceFolder}",
+      "autoAttachChildProcesses": true,
+      "program": "${workspaceRoot}/node_modules/@wdio/cli/bin/wdio.js",
+      "console": "integratedTerminal"
+    },
+  ]
+}

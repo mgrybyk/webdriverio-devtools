@@ -1,0 +1,11 @@
+dist: xenial
+language: node_js
+
+node_js:
+  - 10
+
+addons:
+  chrome: stable
+
+script:
+  - CHROME_HEADLESS=true npm test

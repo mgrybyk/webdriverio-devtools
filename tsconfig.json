@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./.tsbuild/",
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "target": "es2017",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "types": [
+      "node",
+      "@wdio/sync",
+      "@wdio/mocha-framework",
+      "@types/chai"
+    ],
+    "paths": {
+      "test/*": [
+        "./test/*"
+      ],
+      "src/*": [
+        "./src/*"
+      ]
+    },
+    "typeRoots": [
+      "./src/types"
+    ]
+  },
+  "include": [
+    "./test/**/*.ts",
+    "./src/**/*.ts"
+  ]
+}

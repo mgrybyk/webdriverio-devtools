@@ -1,0 +1,79 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-eslint-rules"
+  ],
+  "rules": {
+    "only-arrow-functions": false,
+    "ordered-imports": false,
+    "no-this-assignment": false,
+    "no-empty": false,
+    "arrow-parens": false,
+    "trailing-comma": false,
+    "no-console": false,
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always",
+        "method": "always"
+      }
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "max-line-length": [
+      false,
+      140
+    ],
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "array-type": false,
+    "ban-types": {
+      "options": [
+        [
+          "Object",
+          "Avoid using the `Object` type. Did you mean `object`?"
+        ],
+        [
+          "Function",
+          "Avoid using the `Function` type. Prefer a specific function type, like `() => void`, or use `ts.AnyFunction`."
+        ],
+        [
+          "Boolean",
+          "Avoid using the `Boolean` type. Did you mean `boolean`?"
+        ],
+        [
+          "Number",
+          "Avoid using the `Number` type. Did you mean `number`?"
+        ],
+        [
+          "String",
+          "Avoid using the `String` type. Did you mean `string`?"
+        ]
+      ]
+    },
+    "object-curly-spacing": true
+  }
+}
