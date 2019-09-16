@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "tsc --incremental",
     "lint": "tslint --project tsconfig.json --fix",
-    "test": "CHROME_HEADLESS=true wdio ./wdio.CHROME.conf.js"
+    "test": "CHROME_HEADLESS=true npm run test:chrome",
+    "test:chrome": "wdio ./wdio.CHROME.conf.js"
   },
   "repository": {
     "type": "git",
