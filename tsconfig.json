@@ -16,21 +16,20 @@
       "@wdio/sync",
       "@wdio/mocha-framework",
       "@types/chai"
-    ],
-    "paths": {
+  ],
+  "paths": {
       "test/*": [
-        "./test/*"
+          "./test/*"
       ],
       "src/*": [
-        "./src/*"
+          "./src/*"
       ]
-    },
-    "typeRoots": [
-      "./src/types"
-    ]
   },
+  "typeRoots" : ["./src/types"]
+},
   "include": [
     "./test/**/*.ts",
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "./wdio.conf.typed.ts"
   ]
 }
