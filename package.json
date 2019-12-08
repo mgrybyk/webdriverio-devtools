@@ -2,7 +2,6 @@
   "name": "webdriverio-devtools",
   "version": "1.0.0",
   "description": "WebdriverIO with Chrome DevTools Protocol",
-  "main": "index.js",
   "scripts": {
     "compile": "tsc --incremental",
     "lint": "tslint --project tsconfig.json --fix",
@@ -13,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/mgrybyk/webdriverio-devtools.git"
   },
-  "keywords": [],
+  "keywords": [
+    "webdriverio",
+    "devtools",
+    "expect-webdriverio"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -28,6 +31,8 @@
   "devDependencies": {
     "husky": "^3.1.0",
     "npm-run-all": "^4.1.5",
+    "ts-node": "^8.5.4",
+    "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.1",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.7.3"
@@ -41,9 +46,7 @@
     "@wdio/sync": "^5.16.14",
     "devtools": "^5.16.13",
     "expect": "^24.9.0",
-    "expect-webdriverio": "^0.1.2-beta.6",
-    "ts-node": "^8.5.4",
-    "tsconfig-paths": "^3.9.0"
+    "expect-webdriverio": "^0.1.2-beta.6"
   },
   "bundledDependencies": []
 }

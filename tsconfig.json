@@ -32,6 +32,6 @@
   "include": [
     "./test/**/*.ts",
     "./src/**/*.ts",
-    "./wdio.conf.typed.ts"
+    "./config/**.ts"
   ]
 }

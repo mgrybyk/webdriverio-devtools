@@ -1,4 +1,4 @@
-const config: WebdriverIO.Config = {
+export const config: WebdriverIO.Config = {
     specs: ['./test/specs/**/*.ts'],
     baseUrl: 'https://webdriver.io/',
     waitforTimeout: 10000,
@@ -16,5 +16,3 @@ const config: WebdriverIO.Config = {
         require('expect-webdriverio')
     },
 }
-
-exports.config = config
