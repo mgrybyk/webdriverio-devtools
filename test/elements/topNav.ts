@@ -1,12 +1,12 @@
 class TopNavigation {
-    get rootElement () { return $('nav.slidingNav ul.nav-site') }
+    get $origin () { return $('nav.slidingNav ul.nav-site') }
 
     public openByName (name: string) {
-        this.rootElement.$(`=${name}`).click()
+        this.$origin.$(`=${name}`).click()
     }
 
-    public getActive () {
-        return this.rootElement.$('.siteNavItemActive a').getText()
+    public $getActive () {
+        return this.$origin.$('.siteNavItemActive a')
     }
 }
 export const topNavigation = new TopNavigation()

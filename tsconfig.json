@@ -15,18 +15,20 @@
       "node",
       "@wdio/sync",
       "@wdio/mocha-framework",
-      "@types/chai"
-  ],
-  "paths": {
-      "test/*": [
-          "./test/*"
+      "expect-webdriverio"
+    ],
+    "paths": {
+      "@test/*": [
+        "./test/*"
       ],
-      "src/*": [
-          "./src/*"
+      "@src/*": [
+        "./src/*"
       ]
+    },
+    "typeRoots": [
+      "./src/types"
+    ]
   },
-  "typeRoots" : ["./src/types"]
-},
   "include": [
     "./test/**/*.ts",
     "./src/**/*.ts",

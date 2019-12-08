@@ -9,11 +9,11 @@
 ## Using
 - `devtools` automation protocol
 - TypeScript
-- chai assertions
+- expect-webdriverio
 
 ## Getting Started
 1. `npm install`
-2. `npm test` to run in headless mode or `npm run test:chrome` to run in headful mode
+2. `npm test` to run in headful mode or `npm run test:headless` to run in headless mode
 
 ## Additional Features
  - VSCode debug configs to run single/all test(s)

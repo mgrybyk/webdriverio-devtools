@@ -1,15 +1,15 @@
 class OnPageNavigation {
-    get rootElement () { return $('nav.onPageNav ul') }
+    get $origin () { return $('nav.onPageNav ul') }
 
     public openByName (name: string) {
-        const link = this.rootElement.$(`=${name}`)
-        link.scrollIntoView(false)
+        const link = this.$origin.$(`=${name}`)
+        link.waitForClickable()
         link.click()
-        browser.waitUntil(() => this.getActive() === name)
+        browser.waitUntil(() => this.$getActive().getText() === name)
     }
 
-    public getActive () {
-        return this.rootElement.$('a.active').getText()
+    public $getActive () {
+        return this.$origin.$('a.active')
     }
 }
 export const onPageNavigation = new OnPageNavigation()

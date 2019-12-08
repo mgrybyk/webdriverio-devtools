@@ -1,8 +1,8 @@
 class DocPage {
     get rootElement () { return $('.container.mainContainer') }
 
-    public getPostHeader () {
-        return this.rootElement.$('.postHeaderTitle').getText()
+    public $getPostHeader () {
+        return this.rootElement.$('.postHeaderTitle')
     }
 
     public getAnchorHeaderById (id: string) {

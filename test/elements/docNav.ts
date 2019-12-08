@@ -1,14 +1,14 @@
 class DocumentNavigation {
-    get rootElement () { return $('#docsNav') }
+    get $origin () { return $('#docsNav') }
 
     public openByName (name: string) {
-        const link = this.rootElement.$(`.//li/a[normalize-space() = "${name}"]`)
-        link.scrollIntoView(false)
+        const link = this.$origin.$(`.//li/a[normalize-space() = "${name}"]`)
+        link.waitForClickable()
         link.click()
     }
 
-    public getActive () {
-        return this.rootElement.$('.navListItemActive a').getText()
+    public $getActive () {
+        return this.$origin.$('.navListItemActive a')
     }
 }
 export const documentNavigation = new DocumentNavigation()
