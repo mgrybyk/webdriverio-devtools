@@ -35,16 +35,16 @@
     "tsconfig-paths": "^3.9.0",
     "tslint": "^5.20.1",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.4"
   },
   "dependencies": {
     "@types/mocha": "^5.2.7",
-    "@wdio/cli": "^5.16.13",
-    "@wdio/local-runner": "^5.16.13",
-    "@wdio/mocha-framework": "^5.16.13",
+    "@wdio/cli": "^5.18.1",
+    "@wdio/local-runner": "^5.18.0",
+    "@wdio/mocha-framework": "^5.16.15",
     "@wdio/spec-reporter": "^5.16.11",
-    "@wdio/sync": "^5.16.14",
-    "devtools": "^5.16.13",
+    "@wdio/sync": "^5.17.0",
+    "devtools": "^5.18.0",
     "expect": "^24.9.0",
     "expect-webdriverio": "^0.1.2-beta.6"
   },
