@@ -4,9 +4,9 @@ const chromeConfig: WebdriverIO.Config = {
     ...config,
     automationProtocol: 'devtools',
     capabilities: [{
+        // @ts-ignore
         'browserName': 'chrome',
         'goog:chromeOptions': {
-            // @ts-ignore
             headless: process.env.CHROME_HEADLESS === 'true'
         }
     }],

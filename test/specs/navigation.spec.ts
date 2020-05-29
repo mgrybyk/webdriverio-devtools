@@ -1,7 +1,7 @@
-import { topNavigation } from '@test/elements/topNav'
-import { documentNavigation } from '@test/elements/docNav'
-import { onPageNavigation } from '@test/elements/pageNav'
-import { docPage } from '@test/pages/docPage'
+import { topNavigation } from '../elements/topNav'
+import { documentNavigation } from '../elements/docNav'
+import { onPageNavigation } from '../elements/pageNav'
+import { docPage } from '../pages/docPage'
 
 describe('Navigation', () => {
     before(() => {
@@ -9,8 +9,8 @@ describe('Navigation', () => {
     })
 
     it('should open page from top nav', () => {
-        topNavigation.openByName('Guide')
-        expect(topNavigation.$getActive()).toHaveText('Guide')
+        topNavigation.openByName('Docs')
+        expect(topNavigation.$getActive()).toHaveText('Docs')
     })
 
     it('should open document from docs navigation', () => {

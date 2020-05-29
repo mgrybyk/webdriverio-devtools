@@ -1,30 +1,19 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "outDir": "./.tsbuild/",
-    "noImplicitAny": true,
     "sourceMap": false,
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": true,
+    "noImplicitAny": true,
     "strictPropertyInitialization": true,
     "strictNullChecks": true,
-    "module": "commonjs",
-    "target": "es2017",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "removeComments": true,
     "types": [
       "node",
       "@wdio/sync",
       "@wdio/mocha-framework",
       "expect-webdriverio"
     ],
-    "paths": {
-      "@test/*": [
-        "./test/*"
-      ],
-      "@src/*": [
-        "./src/*"
-      ]
-    },
     "typeRoots": [
       "./src/types"
     ]
@@ -32,6 +21,6 @@
   "include": [
     "./test/**/*.ts",
     "./src/**/*.ts",
-    "./config/**.ts"
+    "./config/*.ts"
   ]
 }
