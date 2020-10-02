@@ -2,10 +2,15 @@ dist: xenial
 language: node_js
 
 node_js:
-  - 10
+  - 12
 
 addons:
   chrome: stable
+  firefox: latest-nightly
+
+env:
+  - BROWSER_NAME=chrome
+  - BROWSER_NAME=firefox
 
 script:
-  - CHROME_HEADLESS=true npm test
+  - npm run test:headless -- --${BROWSER_NAME}

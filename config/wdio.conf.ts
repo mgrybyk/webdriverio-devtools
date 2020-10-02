@@ -7,12 +7,11 @@ export const config: WebdriverIO.Config = {
     reporters: ['spec'],
     mochaOpts: {
         timeout: 60000,
-        require: []
     },
     logLevel: 'info',
     outputDir: 'logs',
     // hooks
-    before (capabilities, specs) {
-        require('expect-webdriverio')
+    before() {
+        require('../src/wdio/addCommands')
     },
 }

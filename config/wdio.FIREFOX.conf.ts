@@ -1,6 +1,6 @@
 import { config } from './wdio.conf'
 
-const browserOptions: WebDriver.ChromeOptions & { args: Array<string> } = {
+const browserOptions: WebDriver.FirefoxOptions = {
     args: [...(process.argv.includes('--headless') ? ['--headless', '--no-sandbox'] : []), '--window-size=1920,1080'],
 }
 
@@ -9,8 +9,8 @@ const browserConfig: WebdriverIO.Config = {
     automationProtocol: 'devtools',
     capabilities: [
         {
-            browserName: 'chrome',
-            'goog:chromeOptions': browserOptions,
+            browserName: 'firefox',
+            'moz:firefoxOptions': browserOptions,
         },
     ],
 }

@@ -1,11 +1,13 @@
 class DocPage {
-    get rootElement () { return $('.container.mainContainer') }
+    get rootElement() {
+        return $('.container.mainContainer')
+    }
 
-    public $getPostHeader () {
+    public $getPostHeader() {
         return this.rootElement.$('.postHeaderTitle')
     }
 
-    public getAnchorHeaderById (id: string) {
+    public getAnchorHeaderById(id: string) {
         return this.rootElement.$(`.//a[@class="anchor" and @id="${id}"]/..`)
     }
 }

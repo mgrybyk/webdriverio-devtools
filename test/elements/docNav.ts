@@ -1,13 +1,15 @@
 class DocumentNavigation {
-    get $origin () { return $('#docsNav') }
+    get $origin() {
+        return $('#docsNav')
+    }
 
-    public openByName (name: string) {
+    public openByName(name: string) {
         const link = this.$origin.$(`.//li/a[normalize-space() = "${name}"]`)
         link.waitForClickable()
         link.click()
     }
 
-    public $getActive () {
+    public $getActive() {
         return this.$origin.$('.navListItemActive a')
     }
 }

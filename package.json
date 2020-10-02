@@ -4,20 +4,23 @@
   "description": "WebdriverIO with Chrome DevTools Protocol",
   "scripts": {
     "compile": "tsc --incremental",
-    "lint": "tslint --project tsconfig.json --fix",
-    "test": "wdio wdio.CHROME.conf.js",
-    "test:headless": "CHROME_HEADLESS=true npm test"
+    "lint": "eslint --ext .ts --ignore-path .gitignore .",
+    "test": "wdio ./wdio.conf.js",
+    "test:headless": "npm run test -- --headless"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mgrybyk/webdriverio-devtools.git"
   },
   "keywords": [
-    "webdriverio",
+    "WebdriverIO",
     "devtools",
+    "wdio",
+    "mocha",
+    "typescript",
     "expect-webdriverio"
   ],
-  "author": "",
+  "author": "mykola.grybyk@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mgrybyk/webdriverio-devtools/issues"
@@ -29,22 +32,26 @@
     }
   },
   "devDependencies": {
-    "husky": "^4.2.5",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "npm-run-all": "^4.1.5",
-    "ts-node": "^8.10.2",
-    "tslint": "^6.1.2",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.9.3"
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   },
   "dependencies": {
-    "@types/mocha": "^7.0.2",
-    "@wdio/cli": "^6.1.15",
-    "@wdio/local-runner": "^6.1.14",
-    "@wdio/mocha-framework": "^6.1.14",
-    "@wdio/spec-reporter": "^6.1.14",
-    "@wdio/sync": "^6.1.14",
-    "devtools": "^6.1.14",
-    "expect-webdriverio": "^1.1.5"
+    "@types/mocha": "^8.0.3",
+    "@wdio/cli": "^6.5.2",
+    "@wdio/local-runner": "^6.5.2",
+    "@wdio/mocha-framework": "^6.5.0",
+    "@wdio/spec-reporter": "^6.4.7",
+    "@wdio/sync": "^6.5.0",
+    "devtools": "^6.5.0",
+    "expect-webdriverio": "^1.4.0"
   },
   "bundledDependencies": []
 }
