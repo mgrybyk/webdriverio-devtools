@@ -8,6 +8,7 @@ export const config: WebdriverIO.Config = {
     mochaOpts: {
         timeout: 60000,
     },
+    specFileRetries: 1,
     logLevel: 'info',
     outputDir: 'logs',
     // hooks
