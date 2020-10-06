@@ -1,7 +1,7 @@
 import { config } from './wdio.conf'
 
 const browserOptions: WebDriver.FirefoxOptions = {
-    args: [...(process.argv.includes('--headless') ? ['--headless', '--no-sandbox'] : []), '--window-size=1920,1080'],
+    args: [...(process.argv.includes('--headless') ? ['--headless'] : []), '--width=1920', '--height=1080'],
     binary: process.env.CI ? 'firefox' : undefined,
 }
 
