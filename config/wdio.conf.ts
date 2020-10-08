@@ -3,6 +3,7 @@ export const config: WebdriverIO.Config = {
     baseUrl: 'https://webdriver.io/',
     waitforTimeout: 10000,
     maxInstances: 5,
+    automationProtocol: 'devtools',
     framework: 'mocha',
     reporters: ['spec'],
     mochaOpts: {
