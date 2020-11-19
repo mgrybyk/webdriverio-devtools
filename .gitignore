@@ -69,3 +69,6 @@ typings/
 
 # TypeScript build
 .tsbuild
+
+report
+allure-results
