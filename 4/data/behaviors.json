@@ -2,52 +2,52 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "should open page from top nav",
-    "uid" : "bd11390d933c7c4b",
+    "uid" : "da6a062e09e03075",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1605795930041,
-      "stop" : 1605795930790,
-      "duration" : 749
+      "start" : 1605796771114,
+      "stop" : 1605796771901,
+      "duration" : 787
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chrome Headless-86.0.4240.198" ]
   }, {
     "name" : "should have proper title",
-    "uid" : "e8995b40646d8fbc",
+    "uid" : "1c61b823328853d5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1605795930076,
-      "stop" : 1605795930093,
-      "duration" : 17
+      "start" : 1605796771151,
+      "stop" : 1605796771182,
+      "duration" : 31
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chrome Headless-86.0.4240.198" ]
   }, {
     "name" : "should open document from docs navigation",
-    "uid" : "690d5347799c22ed",
+    "uid" : "263520d2172b925d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1605795930791,
-      "stop" : 1605795931140,
-      "duration" : 349
+      "start" : 1605796771901,
+      "stop" : 1605796772372,
+      "duration" : 471
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chrome Headless-86.0.4240.198" ]
   }, {
     "name" : "should scroll to anchor on page",
-    "uid" : "749575e511dcd4d9",
+    "uid" : "62d7d6b4df80f16b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1605795931140,
-      "stop" : 1605795931738,
-      "duration" : 598
+      "start" : 1605796772372,
+      "stop" : 1605796772969,
+      "duration" : 597
     },
     "flaky" : false,
     "newFailed" : false,

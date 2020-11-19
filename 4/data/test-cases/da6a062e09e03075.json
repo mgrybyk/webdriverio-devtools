@@ -1,12 +1,12 @@
 {
-  "uid" : "e8995b40646d8fbc",
-  "name" : "should have proper title",
-  "fullName" : "Landing Page.should have proper title",
-  "historyId" : "ece74c575c7049c1822ebc0499fe81a0",
+  "uid" : "da6a062e09e03075",
+  "name" : "should open page from top nav",
+  "fullName" : "Navigation.should open page from top nav",
+  "historyId" : "c12aa95869ede2bd51f0d2e3a5028d3d",
   "time" : {
-    "start" : 1605795930076,
-    "stop" : 1605795930093,
-    "duration" : 17
+    "start" : 1605796771114,
+    "stop" : 1605796771901,
+    "duration" : 787
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,19 +23,19 @@
     "value" : "javascript"
   }, {
     "name" : "thread",
-    "value" : "0-0"
+    "value" : "0-1"
   }, {
     "name" : "suite",
-    "value" : "Landing Page"
+    "value" : "Navigation"
   }, {
     "name" : "testClass",
-    "value" : "Landing Page"
+    "value" : "Navigation"
   }, {
     "name" : "testMethod",
-    "value" : "should have proper title"
+    "value" : "should open page from top nav"
   }, {
     "name" : "package",
-    "value" : "Landing Page"
+    "value" : "Navigation"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e8995b40646d8fbc.json",
+  "source" : "da6a062e09e03075.json",
   "parameterValues" : [ "Chrome Headless-86.0.4240.198" ]
 }

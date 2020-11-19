@@ -1,6 +1,6 @@
 [ {
-  "buildOrder" : 2,
-  "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/2/",
+  "buildOrder" : 4,
+  "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4/",
   "reportName" : "Allure Report with history",
   "data" : {
     "run" : 4,

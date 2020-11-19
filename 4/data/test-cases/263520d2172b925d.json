@@ -1,12 +1,12 @@
 {
-  "uid" : "749575e511dcd4d9",
-  "name" : "should scroll to anchor on page",
-  "fullName" : "Navigation.should scroll to anchor on page",
-  "historyId" : "3c58e32e2566ea6effa043f5667c8f0e",
+  "uid" : "263520d2172b925d",
+  "name" : "should open document from docs navigation",
+  "fullName" : "Navigation.should open document from docs navigation",
+  "historyId" : "4b88100957ceb66d6bbfe7313c3ea402",
   "time" : {
-    "start" : 1605795931140,
-    "stop" : 1605795931738,
-    "duration" : 598
+    "start" : 1605796771901,
+    "stop" : 1605796772372,
+    "duration" : 471
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -32,7 +32,7 @@
     "value" : "Navigation"
   }, {
     "name" : "testMethod",
-    "value" : "should scroll to anchor on page"
+    "value" : "should open document from docs navigation"
   }, {
     "name" : "package",
     "value" : "Navigation"
@@ -53,6 +53,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "749575e511dcd4d9.json",
+  "source" : "263520d2172b925d.json",
   "parameterValues" : [ "Chrome Headless-86.0.4240.198" ]
 }

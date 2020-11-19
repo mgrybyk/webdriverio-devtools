@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "749575e511dcd4d9",
-      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/2//#testresult/749575e511dcd4d9",
+      "uid" : "62d7d6b4df80f16b",
+      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4//#testresult/62d7d6b4df80f16b",
       "status" : "passed",
       "time" : {
-        "start" : 1605795931140,
-        "stop" : 1605795931738,
-        "duration" : 598
+        "start" : 1605796772372,
+        "stop" : 1605796772969,
+        "duration" : 597
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bd11390d933c7c4b",
-      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/2//#testresult/bd11390d933c7c4b",
+      "uid" : "da6a062e09e03075",
+      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4//#testresult/da6a062e09e03075",
       "status" : "passed",
       "time" : {
-        "start" : 1605795930041,
-        "stop" : 1605795930790,
-        "duration" : 749
+        "start" : 1605796771114,
+        "stop" : 1605796771901,
+        "duration" : 787
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "690d5347799c22ed",
-      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/2//#testresult/690d5347799c22ed",
+      "uid" : "263520d2172b925d",
+      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4//#testresult/263520d2172b925d",
       "status" : "passed",
       "time" : {
-        "start" : 1605795930791,
-        "stop" : 1605795931140,
-        "duration" : 349
+        "start" : 1605796771901,
+        "stop" : 1605796772372,
+        "duration" : 471
       }
     } ]
   },
@@ -69,13 +69,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e8995b40646d8fbc",
-      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/2//#testresult/e8995b40646d8fbc",
+      "uid" : "1c61b823328853d5",
+      "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4//#testresult/1c61b823328853d5",
       "status" : "passed",
       "time" : {
-        "start" : 1605795930076,
-        "stop" : 1605795930093,
-        "duration" : 17
+        "start" : 1605796771151,
+        "stop" : 1605796771182,
+        "duration" : 31
       }
     } ]
   }
