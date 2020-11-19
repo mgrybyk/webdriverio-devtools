@@ -1,0 +1,41 @@
+[ {
+  "uid" : "bd11390d933c7c4b",
+  "name" : "should open page from top nav",
+  "time" : {
+    "start" : 1605795930041,
+    "stop" : 1605795930790,
+    "duration" : 749
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8995b40646d8fbc",
+  "name" : "should have proper title",
+  "time" : {
+    "start" : 1605795930076,
+    "stop" : 1605795930093,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "690d5347799c22ed",
+  "name" : "should open document from docs navigation",
+  "time" : {
+    "start" : 1605795930791,
+    "stop" : 1605795931140,
+    "duration" : 349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "749575e511dcd4d9",
+  "name" : "should scroll to anchor on page",
+  "time" : {
+    "start" : 1605795931140,
+    "stop" : 1605795931738,
+    "duration" : 598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

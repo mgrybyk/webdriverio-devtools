@@ -1,0 +1,58 @@
+{
+  "uid" : "749575e511dcd4d9",
+  "name" : "should scroll to anchor on page",
+  "fullName" : "Navigation.should scroll to anchor on page",
+  "historyId" : "3c58e32e2566ea6effa043f5667c8f0e",
+  "time" : {
+    "start" : 1605795931140,
+    "stop" : 1605795931738,
+    "duration" : 598
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should scroll to anchor on page"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "749575e511dcd4d9.json",
+  "parameterValues" : [ "Chrome Headless-86.0.4240.198" ]
+}
