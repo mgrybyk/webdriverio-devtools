@@ -11,6 +11,7 @@
 -   `devtools` automation protocol
 -   TypeScript
 -   [expect-webdriverio](https://github.com/webdriverio/expect-webdriverio)
+-   [Allure Report](https://mgrybyk.github.io/webdriverio-devtools/)
 
 ## Getting Started
 

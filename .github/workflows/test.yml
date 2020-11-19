@@ -35,7 +35,14 @@ jobs:
         run: npm run compile && npm run lint
       - name: Tests
         run: npm run test:headless
-      - name: Test marketplace action
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report
