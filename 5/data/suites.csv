@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 19 15:05:23 GMT 2020","Thu Nov 19 15:05:23 GMT 2020","776","","Navigation","","Navigation","should open page from top nav","should open page from top nav",""
+"passed","Thu Nov 19 15:05:24 GMT 2020","Thu Nov 19 15:05:25 GMT 2020","584","","Navigation","","Navigation","should scroll to anchor on page","should scroll to anchor on page",""
+"passed","Thu Nov 19 15:05:23 GMT 2020","Thu Nov 19 15:05:24 GMT 2020","602","","Navigation","","Navigation","should open document from docs navigation","should open document from docs navigation",""
+"passed","Thu Nov 19 15:05:23 GMT 2020","Thu Nov 19 15:05:23 GMT 2020","18","","Landing Page","","Landing Page","should have proper title","should have proper title",""

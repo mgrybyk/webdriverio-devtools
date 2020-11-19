@@ -1,0 +1,78 @@
+{
+  "uid" : "d83a4019b7cba6e6",
+  "name" : "should open document from docs navigation",
+  "fullName" : "Navigation.should open document from docs navigation",
+  "historyId" : "4b88100957ceb66d6bbfe7313c3ea402",
+  "time" : {
+    "start" : 1605798323838,
+    "stop" : 1605798324440,
+    "duration" : 602
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should open document from docs navigation"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-86.0.4240.198"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "263520d2172b925d",
+        "reportUrl" : "https://mgrybyk.github.io/webdriverio-devtools/4//#testresult/263520d2172b925d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1605796771901,
+          "stop" : 1605796772372,
+          "duration" : 471
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d83a4019b7cba6e6.json",
+  "parameterValues" : [ "Chrome Headless-86.0.4240.198" ]
+}
