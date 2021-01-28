@@ -1,0 +1,58 @@
+{
+  "uid" : "eacf6a27979d7b42",
+  "name" : "should open document from docs navigation",
+  "fullName" : "Navigation.should open document from docs navigation",
+  "historyId" : "7c39b1ce52f6b085a5914d3dd6c6ceb8",
+  "time" : {
+    "start" : 1611824727777,
+    "stop" : 1611824728186,
+    "duration" : 409
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should open document from docs navigation"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-87.0.4280.88"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eacf6a27979d7b42.json",
+  "parameterValues" : [ "Chrome Headless-87.0.4280.88" ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "7c2b80fe7cb6c537",
+  "name" : "should open page from top nav",
+  "fullName" : "Navigation.should open page from top nav",
+  "historyId" : "8c8d288cc9213e6e9b0e311c0181ec5b",
+  "time" : {
+    "start" : 1611824726926,
+    "stop" : 1611824727776,
+    "duration" : 850
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should open page from top nav"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-87.0.4280.88"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c2b80fe7cb6c537.json",
+  "parameterValues" : [ "Chrome Headless-87.0.4280.88" ]
+}
