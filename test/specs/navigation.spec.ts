@@ -27,4 +27,8 @@ describe('Navigation', () => {
         expect(subHeader).toHaveText('DevTools Protocol')
         expect(subHeader).toBeDisplayedInViewport()
     })
+
+    it('custom matcher test', () => {
+        expect('foo').myMatcher('foo')
+    })
 })

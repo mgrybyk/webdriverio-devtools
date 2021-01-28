@@ -28,6 +28,7 @@ export const config: WebdriverIO.Config = {
     // hooks
     before() {
         require('../src/wdio/addCommands')
+        require('../src/matchers').addCustomMatchers()
     },
     afterTest(test, context, { passed }) {
         if (!passed) {
