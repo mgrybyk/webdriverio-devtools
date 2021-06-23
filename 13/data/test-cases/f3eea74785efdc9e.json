@@ -1,0 +1,76 @@
+{
+  "uid" : "f3eea74785efdc9e",
+  "name" : "should open document from docs navigation",
+  "fullName" : "Navigation.should open document from docs navigation",
+  "historyId" : "b6b53aa16db72836db126d70835b50f2",
+  "time" : {
+    "start" : 1624443668727,
+    "stop" : 1624443679430,
+    "duration" : 10703
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call $ on element with selector \"#docsNav\" because element wasn't found",
+  "statusTrace" : "Error: Can't call $ on element with selector \"#docsNav\" because element wasn't found\n                    at DocumentNavigation.openByName (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/elements/docNav.ts:9:35)\n                    at Context.<anonymous> (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/specs/navigation.spec.ts:16:37)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Can't call $ on element with selector \"#docsNav\" because element wasn't found",
+    "statusTrace" : "Error: Can't call $ on element with selector \"#docsNav\" because element wasn't found\n                    at DocumentNavigation.openByName (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/elements/docNav.ts:9:35)\n                    at Context.<anonymous> (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/specs/navigation.spec.ts:16:37)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "794ed68df27d190",
+      "name" : "Screenshot",
+      "source" : "794ed68df27d190.png",
+      "type" : "image/png",
+      "size" : 607020
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should open document from docs navigation"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-91.0.4472.101"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f3eea74785efdc9e.json",
+  "parameterValues" : [ "Chrome Headless-91.0.4472.101" ]
+}

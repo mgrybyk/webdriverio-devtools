@@ -1,0 +1,76 @@
+{
+  "uid" : "16a5d07d9ba5d00a",
+  "name" : "should scroll to anchor on page",
+  "fullName" : "Navigation.should scroll to anchor on page",
+  "historyId" : "9811de4d9decdf94c4ae220b4f8b76c1",
+  "time" : {
+    "start" : 1624443679431,
+    "stop" : 1624443690108,
+    "duration" : 10677
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call $ on element with selector \"nav.onPageNav ul\" because element wasn't found",
+  "statusTrace" : "Error: Can't call $ on element with selector \"nav.onPageNav ul\" because element wasn't found\n                    at OnPageNavigation.openByName (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/elements/pageNav.ts:9:35)\n                    at Context.<anonymous> (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/specs/navigation.spec.ts:21:36)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Can't call $ on element with selector \"nav.onPageNav ul\" because element wasn't found",
+    "statusTrace" : "Error: Can't call $ on element with selector \"nav.onPageNav ul\" because element wasn't found\n                    at OnPageNavigation.openByName (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/elements/pageNav.ts:9:35)\n                    at Context.<anonymous> (/home/runner/work/webdriverio-devtools/webdriverio-devtools/test/specs/navigation.spec.ts:21:36)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "188ec00249381b15",
+      "name" : "Screenshot",
+      "source" : "188ec00249381b15.png",
+      "type" : "image/png",
+      "size" : 607197
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-1"
+  }, {
+    "name" : "suite",
+    "value" : "Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "should scroll to anchor on page"
+  }, {
+    "name" : "package",
+    "value" : "Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome Headless-91.0.4472.101"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "16a5d07d9ba5d00a.json",
+  "parameterValues" : [ "Chrome Headless-91.0.4472.101" ]
+}
