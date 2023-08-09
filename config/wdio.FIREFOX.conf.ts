@@ -1,12 +1,13 @@
-import { config } from './wdio.conf'
+import type { Capabilities, Options } from '@wdio/types'
+import { config } from './wdio.conf.js'
 
-const browserOptions: WebDriver.FirefoxOptions = {
+const browserOptions: Capabilities.FirefoxOptions & { headless: boolean } = {
     args: ['--width=1920', '--height=1080'],
     binary: process.env.CI ? 'firefox' : undefined,
     headless: process.argv.includes('--headless'),
 }
 
-const browserConfig: WebdriverIO.Config = {
+export const browserConfig: Options.Testrunner = {
     ...config,
     capabilities: [
         {
@@ -15,5 +16,3 @@ const browserConfig: WebdriverIO.Config = {
         },
     ],
 }
-
-exports.config = browserConfig

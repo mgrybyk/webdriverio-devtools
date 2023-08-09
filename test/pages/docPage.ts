@@ -1,14 +1,10 @@
 class DocPage {
     get rootElement() {
-        return $('.container.mainContainer')
-    }
-
-    public $getPostHeader() {
-        return this.rootElement.$('.postHeaderTitle')
+        return $('article')
     }
 
     public getAnchorHeaderById(id: string) {
-        return this.rootElement.$(`.//a[@class="anchor" and @id="${id}"]/..`)
+        return this.rootElement.$(`h2.anchor[id="${id}"]`)
     }
 }
 export const docPage = new DocPage()

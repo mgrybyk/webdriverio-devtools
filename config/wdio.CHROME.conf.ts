@@ -1,11 +1,12 @@
-import { config } from './wdio.conf'
+import type { Capabilities, Options } from '@wdio/types'
+import { config } from './wdio.conf.js'
 
-const browserOptions: WebDriver.ChromeOptions & { args: Array<string> } = {
+const browserOptions: Capabilities.ChromeOptions & { headless: boolean } = {
     args: ['--window-size=1920,1080'],
     headless: process.argv.includes('--headless'),
 }
 
-const browserConfig: WebdriverIO.Config = {
+export const browserConfig: Options.Testrunner = {
     ...config,
     capabilities: [
         {
@@ -14,5 +15,3 @@ const browserConfig: WebdriverIO.Config = {
         },
     ],
 }
-
-exports.config = browserConfig

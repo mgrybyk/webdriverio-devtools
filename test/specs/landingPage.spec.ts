@@ -1,9 +1,11 @@
 describe('Landing Page', () => {
-    before(() => {
-        browser.url('/')
+    beforeEach(async () => {
+        await browser.url('/')
     })
 
-    it('should have proper title', () => {
-        expect(browser).toHaveTitle('WebdriverIO', { containing: true })
+    it('should have proper title', async () => {
+        await expect(browser).toHaveTitle('WebdriverIO', { containing: true })
+        // custom matcher usage example
+        await expect('foo').myMatcher('foo')
     })
 })

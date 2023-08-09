@@ -1,6 +1,10 @@
 module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
+    parserOptions: {
+        project: './tsconfig.json',
+        ecmaVersion: 2022,
+    },
     plugins: ['@typescript-eslint', 'prettier'],
     extends: [
         'eslint:recommended',
@@ -14,8 +18,9 @@ module.exports = {
         mocha: true,
     },
     rules: {
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/member-delimiter-style': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-floating-promises': 'error',
+        // '@typescript-eslint/explicit-function-return-type': 'off',
+        // '@typescript-eslint/member-delimiter-style': 'off',
+        // '@typescript-eslint/ban-ts-comment': 'off',
     },
 }

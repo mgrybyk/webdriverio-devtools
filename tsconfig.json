@@ -1,23 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "./.tsbuild/",
-    "sourceMap": false,
-    "target": "es2019",
-    "module": "commonjs",
+    // build
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "noEmit": true,
+    // import
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // lint
+    "strict": true,
     "noImplicitAny": true,
     "strictPropertyInitialization": true,
     "strictNullChecks": true,
-    "removeComments": true,
-    "types": [
-      "node",
-      "@wdio/sync",
-      "@wdio/mocha-framework",
-      "devtools"
-    ],
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    // types
+    "types": ["node", "@wdio/globals/types", "expect-webdriverio", "@wdio/mocha-framework", "devtools"]
   },
-  "include": [
-    "./test/**/*.ts",
-    "./src/**/*.ts",
-    "./config/**.ts"
-  ]
+  "include": ["./test/**/*.ts", "./src/**/*.ts", "./config/**.ts", ".*.cjs", "*.ts"]
 }

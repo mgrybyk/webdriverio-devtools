@@ -1,14 +1,14 @@
 class TopNavigation {
     get $origin() {
-        return $('nav.slidingNav ul.nav-site')
+        return $('.navbar__items')
     }
 
-    public openByName(name: string) {
-        this.$origin.$(`=${name}`).click()
+    public async openByName(name: string) {
+        await this.$origin.$(`=${name}`).click()
     }
 
     public $getActive() {
-        return this.$origin.$('.siteNavItemActive a')
+        return this.$origin.$('.navbar__link--active')
     }
 }
 export const topNavigation = new TopNavigation()

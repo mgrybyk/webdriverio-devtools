@@ -1,6 +1,6 @@
 browser.addCommand(
     'getLink',
-    function () {
+    async function (this: WebdriverIO.Element) {
         return this.getAttribute('href')
     },
     true

@@ -1,7 +1,17 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+import type { Options } from '@wdio/types'
+import { rimraf } from 'rimraf'
+
 const allureResultsDir = 'report/allure-results'
 
-export const config: WebdriverIO.Config = {
+export const config: Omit<Options.Testrunner, 'capabilities'> = {
+    runner: 'local',
+    autoCompileOpts: {
+        autoCompile: true,
+        tsNodeOpts: {
+            project: './tsconfig.json',
+            transpileOnly: true,
+        },
+    },
     specs: ['./test/specs/**/*.ts'],
     baseUrl: 'https://webdriver.io/',
     waitforTimeout: 10000,
@@ -22,25 +32,26 @@ export const config: WebdriverIO.Config = {
     mochaOpts: {
         timeout: 60000,
     },
-    specFileRetries: 1,
+    specFileRetries: process.env.CI ? 1 : 0,
     logLevel: 'info',
     outputDir: 'logs',
     // hooks
-    before() {
-        require('../src/wdio/addCommands')
-        require('../src/matchers').addCustomMatchers()
+    async before() {
+        await import('../src/wdio/addCommands.js')
+        const { addCustomMatchers } = await import('../src/matchers.js')
+        addCustomMatchers()
     },
-    afterTest(test, context, { passed }) {
+    async afterTest(test, context, { passed }) {
         if (!passed) {
-            browser.takeScreenshot()
+            await browser.takeScreenshot()
         }
     },
-    afterHook(test, context, { passed }) {
+    async afterHook(test, context, { passed }) {
         if (!passed) {
-            browser.takeScreenshot()
+            await browser.takeScreenshot()
         }
     },
     async onPrepare() {
-        require('rimraf').sync(allureResultsDir)
+        await rimraf(allureResultsDir)
     },
 }

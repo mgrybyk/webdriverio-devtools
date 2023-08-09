@@ -1,60 +1,44 @@
 name: Test
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
+    pull_request:
+    push:
+        branches: ['main', 'master']
 
 jobs:
-  linux:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Cache npm
-        id: cache-npm
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: npm-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node_modules-${{ runner.OS }}-node_modules-${{ hashFiles('**/package-lock.json') }}
-      - name: Install Dependencies
-        run: npm ci
-      - name: Chrome Version
-        run: google-chrome --version
-      - name: Lint / Compile
-        run: npm run compile && npm run lint
-      - name: Tests
-        run: npm run test:headless
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
-        if: always()
-        id: allure-report
-        with:
-            allure_results: report/allure-results
-            gh_pages: gh-pages
-            allure_report: allure-report
-            allure_history: allure-history
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-            PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            PUBLISH_BRANCH: gh-pages
-            PUBLISH_DIR: allure-history
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 'lts/*'
+            - run: npm ci
+            - run: precommit
+            - run: google-chrome --version
+            - run: npm run test:headless
+            - name: Get Allure history
+              uses: actions/checkout@v2
+              if: always()
+              continue-on-error: true
+              with:
+                  ref: gh-pages
+                  path: gh-pages
+            - name: Allure Report action from marketplace
+              uses: simple-elf/allure-report-action@master
+              if: always()
+              id: allure-report
+              with:
+                  allure_results: report/allure-results
+                  gh_pages: gh-pages
+                  allure_report: allure-report
+                  allure_history: allure-history
+            - name: Deploy report to Github Pages
+              if: always()
+              uses: peaceiris/actions-gh-pages@v2
+              env:
+                  PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PUBLISH_BRANCH: gh-pages
+                  PUBLISH_DIR: allure-history
