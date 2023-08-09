@@ -28,11 +28,6 @@
     "url": "https://github.com/mgrybyk/webdriverio-devtools/issues"
   },
   "homepage": "https://github.com/mgrybyk/webdriverio-devtools#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "precommit"
-    }
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
