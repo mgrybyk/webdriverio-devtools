@@ -16,7 +16,7 @@ jobs:
               with:
                   node-version: 'lts/*'
             - run: npm ci
-            - run: precommit
+            - run: npm run precommit
             - run: google-chrome --version
             - run: npm run test:headless
             - name: Get Allure history
