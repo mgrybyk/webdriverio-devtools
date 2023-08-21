@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jan 28 09:05:28 GMT 2021","Thu Jan 28 09:05:28 GMT 2021","605","","Navigation","","Navigation","should scroll to anchor on page","should scroll to anchor on page",""
-"passed","Thu Jan 28 09:05:27 GMT 2021","Thu Jan 28 09:05:28 GMT 2021","409","","Navigation","","Navigation","should open document from docs navigation","should open document from docs navigation",""
-"passed","Thu Jan 28 09:05:28 GMT 2021","Thu Jan 28 09:05:28 GMT 2021","1","","Navigation","","Navigation","custom matcher test","custom matcher test",""
-"passed","Thu Jan 28 09:05:26 GMT 2021","Thu Jan 28 09:05:26 GMT 2021","17","","Landing Page","","Landing Page","should have proper title","should have proper title",""
-"passed","Thu Jan 28 09:05:26 GMT 2021","Thu Jan 28 09:05:27 GMT 2021","850","","Navigation","","Navigation","should open page from top nav","should open page from top nav",""
