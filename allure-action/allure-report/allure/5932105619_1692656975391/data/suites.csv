@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Aug 21 22:29:28 GMT 2023","Mon Aug 21 22:29:32 GMT 2023","3855","","Navigation","","","","should open page from top nav",""
+"passed","Mon Aug 21 22:29:32 GMT 2023","Mon Aug 21 22:29:33 GMT 2023","1596","","Navigation","","","","should scroll to anchor on page",""
+"passed","Mon Aug 21 22:29:28 GMT 2023","Mon Aug 21 22:29:30 GMT 2023","2829","","Landing Page","","","","should have proper title",""
