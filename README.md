@@ -12,7 +12,7 @@
 -   webdriverio@8
 -   `devtools` automation protocol (CDP)
 -   TypeScript@5
--   publishing [Allure Report](https://mgrybyk.github.io/webdriverio-devtools/) to Github Pages
+-   publishing [Allure Report with history](https://mgrybyk.github.io/webdriverio-devtools/allure-action/master/allure/) to Github Pages
 
 ## Getting Started
 
