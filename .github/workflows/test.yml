@@ -40,7 +40,7 @@ jobs:
         with:
           report_id: 'allure'
           gh_pages: 'gh-pages-dir'
-          report_dir: 'allure-results'
+          report_dir: 'report/allure-results'
 
       - name: Commit and push report to gh-pages
         uses: stefanzweifel/git-auto-commit-action@v4
