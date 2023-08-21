@@ -1,0 +1,65 @@
+<!-- html-trend-report-action -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <table id="list-table">
+        <thead>
+          <th>Key</th>
+          <th>Value</th>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+      </table>
+      <ul id="links"></ul>
+    </div>
+
+    <script>
+      const createTr = (data, cellType = 'td') => {
+        const row = document.createElement('tr')
+
+        data.forEach((v) => {
+          const cell = document.createElement(cellType)
+          cell.appendChild(document.createTextNode(v))
+          row.appendChild(cell)
+        })
+
+        return row
+      }
+
+      const linksList = document.getElementById('links')
+      const table = document.getElementById('list-table')
+      const tableBody = table.getElementsByTagName('tbody')[0]
+
+      fetch(`./data.json?t=${Date.now()}`)
+        .then((response) => response.ok && response.json())
+        .then((json) => {
+          if (!json) {
+            return
+          }
+
+          json.links.forEach((record) => {
+            const link = document.createElement('a')
+            link.appendChild(document.createTextNode(record))
+            link.href = record
+            const li = document.createElement('li')
+            li.appendChild(link)
+            linksList.appendChild(li)
+          })
+          delete json.links
+
+          if (Object.keys(json).length === 0) {
+            table.remove()
+          } else {
+            Object.entries(json).forEach((record) => {
+              tableBody.appendChild(createTr(record))
+            })
+          }
+        })
+    </script>
+  </body>
+</html>
