@@ -7,6 +7,10 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
+      pull-requests: write
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,26 +23,39 @@ jobs:
       - run: npm run precommit
       - run: google-chrome --version
       - run: npm run test:headless
-      - name: Get Allure history
-        uses: actions/checkout@v2
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
-          ref: gh-pages
-          path: gh-pages
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
+          ref: gh-pages # branch name
+          path: gh-pages-dir # checkout path
+
+      - name: Allure Report Action
+        uses: mgrybyk/allure-report-branch-action@1
         if: always()
-        id: allure-report
+        continue-on-error: true
+        id: allure
         with:
-          allure_results: report/allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
-          allure_history: allure-history
-      - name: Deploy report to Github Pages
+          report_id: 'allure'
+          gh_pages: 'gh-pages-dir'
+          report_dir: 'allure-results'
+
+      - name: Commit and push report to gh-pages
+        uses: stefanzweifel/git-auto-commit-action@v4
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+        with:
+          repository: gh-pages-dir
+          branch: gh-pages
+          skip_checkout: true
+
+      - name: Comment PR with Allure Report link
+        if: ${{ always() && github.event_name == 'pull_request' }}
+        continue-on-error: true
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            ${{ steps.allure.outputs.test_result_icon }} [Allure Report](${{ steps.allure.outputs.report_url }}) | [History](${{ steps.allure.outputs.report_history_url }})
+          comment_tag: allure_allure
+          mode: recreate
