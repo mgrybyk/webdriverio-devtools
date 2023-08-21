@@ -33,7 +33,7 @@ jobs:
           path: gh-pages-dir # checkout path
 
       - name: Allure Report Action
-        uses: mgrybyk/allure-report-branch-action@v1
+        uses: mgrybyk/allure-report-branch-action@v1.0.1
         if: always()
         continue-on-error: true
         id: allure
