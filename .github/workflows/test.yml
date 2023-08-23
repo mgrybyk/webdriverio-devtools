@@ -41,21 +41,21 @@ jobs:
           report_id: 'allure'
           gh_pages: 'gh-pages-dir'
           report_dir: 'report/allure-results'
+          list_dirs: true
 
-      - name: Commit and push report to gh-pages
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Git Commit and Push Action
+        uses: mgrybyk/git-commit-pull-push-action@v1
         if: always()
         with:
           repository: gh-pages-dir
           branch: gh-pages
-          skip_checkout: true
 
       - name: Comment PR with Allure Report link
-        if: ${{ always() && github.event_name == 'pull_request' }}
+        if: ${{ always() && github.event_name == 'pull_request' && steps.allure.outputs.report_url }}
         continue-on-error: true
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            ${{ steps.allure.outputs.test_result_icon }} [Allure Report](${{ steps.allure.outputs.report_url }}) | [History](${{ steps.allure.outputs.report_history_url }})
+            ${{ steps.allure.outputs.test_result_icon }} [Allure Report](${{ steps.allure.outputs.report_url }}) | ${{ steps.allure.outputs.test_result_passed }}/${{ steps.self_test.outputs.test_result_failed }}/${{ steps.self_test.outputs.test_result_total }} | [History](${{ steps.self_test.outputs.report_history_url }})
           comment_tag: allure_allure
           mode: recreate
